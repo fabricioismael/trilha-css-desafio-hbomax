@@ -1,0 +1,84 @@
+@import url(global.css);
+
+
+body {
+    height: 100vh;
+    background-image: url("../images/background-movies-series.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50px 0;
+}
+
+section.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/background-movies-series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 70%;
+    width: 100%;
+}
+
+section.main form.login {
+    background-color: var(--form-bg-color);
+    box-sizing: border-box;
+    width: 45%;
+    height: 55%;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+section.main form.login h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+section.main form input {
+    font-size: 1rem;
+    padding: 15px;
+    height: 50px;
+    border: var(--form-field-border);
+    background-color: var(--form-bg-color);
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+section.main form.login h3 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.main form.login .login-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+section.main form.login button.btn-entrar {
+    height: 50px;
+    width: 160px;
+    border-radius: 25px;
+    padding: 16px 40px;
+    background: var(--btn-bg-color-gradient);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+section.main form.login a.esqueceu-senha {
+    color: var(--link-color);
+    font-weight: 600;
+}

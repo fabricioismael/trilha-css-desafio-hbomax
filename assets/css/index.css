@@ -1,0 +1,203 @@
+@import url(global.css);
+
+section.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 30px 300px 30px;
+    row-gap: 40px;
+    width: 100%;
+}
+
+section.main .icon-section {
+    display: flex;
+    justify-content: center;
+    column-gap: 22px;
+}
+
+section.main .icon-section .img-icons {
+    object-fit: contain;
+}
+
+section.main h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section.main h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+section.main h3 { 
+    font-size: 1.5rem;
+}
+
+section.main .divider {
+    height: 5px;
+    width: 700px;
+    background: var(--divider-bg-color);
+}
+
+section.main .btn-assineAgora {
+    width: 170px;
+    height: 30px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    background-color: var(--tertiary-color);
+    color: white;
+    border-radius: 20px;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+section.main p {
+    width: 300px;
+    text-align: center;
+}
+
+section.subscription {
+    width: 100%;
+    height: 800px;
+    background-image: url(/assets/images/background-movies-series.png);
+    background-size: cover;
+}
+
+section.subscription .subcription-content {
+    padding: 20px;
+    width: 64%;
+    height: 800px;
+    margin: 0 18%;
+}
+
+section.subscription .subcription-content h2 {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+.subcription-content .subscription-board {
+    display: flex;
+    margin: 40px auto;
+    width: 1150px;
+    height: 600px;
+    column-gap: 80px;
+}
+
+
+section.subscription .subcription-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+    height: 600;
+    padding: 40px 50px;
+    background: var(--card-bg-color);
+}
+
+section.subscription .subcription-cards .subcription-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+section.subscription .price {
+    color: var(--secondary-color);
+}
+section.subscription span {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+section.subscription .subcription-cards li {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0 0 15px 15px;
+}
+
+
+section.subscription .subcription-cards button {
+    padding: 15px 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+
+section.discover {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+section.discover h2 {
+    text-align: center;
+}
+
+section.discover .movie-section {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.movie-section .movie-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-section .movie-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.movie-section .movie-card:hover {
+    transform: scale(1.10);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 16px;
+    transition: transform 1s;
+}
+
+img.movie-img:hover {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.movie-card:nth-child(1):hover {
+    background-image: url("../images/hbo-hover_0.webp");
+}
+
+.movie-card:nth-child(2):hover {
+    background-image: url("../images/MAX-Hover.webp");
+}
+
+.movie-card:nth-child(3):hover {
+    background-image: url("../images/DC-Hover.webp");
+}
+
+.movie-card:nth-child(4):hover {
+    background-image: url("../images/WB-Hover.webp");
+}
+
+.movie-card:nth-child(5):hover {
+    background-image: url("../images/CN-Hover.png");
+}
+
+.movie-card:nth-child(6):hover {
+    background-image: url("../images/UCL-Hover.webp");
+}

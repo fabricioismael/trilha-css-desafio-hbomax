@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+h1,h2,h3,p,body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Quicksand',sans-serif;
+}
+button,a {
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 50px;
+    background: var(--nav-bg-color);
+    z-index: 1;
+}
+
+header a.menu-logo {
+    width: 160px;
+    height: 35px;
+    background-image: url(/assets/images/hbo-logo.svg);
+    background-repeat: no-repeat;
+}
+
+header .btn-assineAgora {
+    width: 170px;
+    height: 30px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    background-color: var(--tertiary-color);
+    color: white;
+    border-radius: 20px;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+header .btn-entrar { 
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+footer div {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer a.link {
+    color: var(--link-color);
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+footer p {
+    color: var(--link-color);
+    margin: 15px 0;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer .social-icons {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+  /* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
